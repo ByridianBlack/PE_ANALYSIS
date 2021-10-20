@@ -1,3 +1,11 @@
+
+'''
+    Extracts the UUID/GUID from the code to have a strong 
+    Host based indicator that can be used reference to malware
+    in the future.
+'''
+
+
 def guid_capture(ea):
     
     segment_1 = idc.GetManyBytes(ea,4)
